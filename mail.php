@@ -13,7 +13,6 @@
             echo "Invalid sender's email!";
         }
         if(filter_var($rEmail, FILTER_VALIDATE_EMAIL)) {
-            //$sender = "From: $sEmail";
             //$sender = "$name <$sEmail>";
             $to = "$rsEmail";
             $headers = 'From: <$sEmail>' . "\r\n";
